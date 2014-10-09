@@ -31,7 +31,6 @@ apps=(
   plex-home-theater
   postgres
   sabnzbd
-  send-to-kindle
   skype
   sparrow
   steam
