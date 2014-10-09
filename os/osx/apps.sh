@@ -25,6 +25,7 @@ apps=(
   joinme
   jumpcut
   macpaw-gemini
+  java7
   netbeans-cpp
   openemu
   plex-home-theater
