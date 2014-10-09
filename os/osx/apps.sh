@@ -16,6 +16,7 @@ apps=(
   carbon-copy-cloner
   cyberduck
   dropbox
+  firefox
   google-chrome
   handbrake
   handbrakebatch
@@ -36,6 +37,7 @@ apps=(
   utorrent
   vagrant
   vmware-fusion-6
+  vlc
 )
 
 # fonts
