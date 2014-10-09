@@ -17,20 +17,20 @@ echo "This script will make your Mac awesome"
 ###############################################################################
 
 echo ""
-echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-  defaults write "${domain}" dontAutoLoad -array \
-    "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-    "/System/Library/CoreServices/Menu Extras/Volume.menu" \
-    "/System/Library/CoreServices/Menu Extras/User.menu"
-done
-defaults write com.apple.systemuiserver menuExtras -array \
-  "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
-  "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
-  "/System/Library/CoreServices/Menu Extras/Battery.menu" \
-  "/System/Library/CoreServices/Menu Extras/Clock.menu"
+# echo "Hide the Time Machine, Volume, User, and Bluetooth icons"
+# for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
+#   defaults write "${domain}" dontAutoLoad -array \
+#     "/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
+#     "/System/Library/CoreServices/Menu Extras/Volume.menu" \
+#     "/System/Library/CoreServices/Menu Extras/User.menu"
+# done
+# defaults write com.apple.systemuiserver menuExtras -array \
+#   "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+#   "/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+#   "/System/Library/CoreServices/Menu Extras/Battery.menu" \
+#   "/System/Library/CoreServices/Menu Extras/Clock.menu"
 
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 echo ""
 echo "Disabling OS X Gate Keeper"
@@ -53,10 +53,10 @@ echo ""
 echo "Automatically quit printer app once the print jobs complete"
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
-echo ""
-echo "Displaying ASCII control characters using caret notation in standard text views"
-defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
+# # Try e.g. `cd /tmp; unidecode "\x{0000}" > cc.txt; open -e cc.txt`
+# echo ""
+# echo "Displaying ASCII control characters using caret notation in standard text views"
+# defaults write NSGlobalDomain NSTextShowsControlCharacters -bool true
 
 echo ""
 echo "Disabling system-wide resume"
@@ -74,9 +74,9 @@ echo ""
 echo "Reveal IP address, hostname, OS version, etc. when clicking the clock in the login window"
 sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
-echo ""
-echo "Never go into computer sleep mode"
-systemsetup -setcomputersleep Off > /dev/null
+# echo ""
+# echo "Never go into computer sleep mode"
+# systemsetup -setcomputersleep Off > /dev/null
 
 echo ""
 echo "Check for software updates daily, not just once per week"
@@ -104,9 +104,9 @@ echo ""
 echo "Disabling press-and-hold for keys in favor of a key repeat"
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-echo ""
-echo "Setting a blazingly fast keyboard repeat rate (ain't nobody got time fo special chars while coding!)"
-defaults write NSGlobalDomain KeyRepeat -int 0
+# echo ""
+# echo "Setting a blazingly fast keyboard repeat rate (ain't nobody got time fo special chars while coding!)"
+# defaults write NSGlobalDomain KeyRepeat -int 0
 
 echo ""
 echo "Disabling auto-correct"
@@ -166,9 +166,9 @@ echo ""
 echo "Disabling the warning when changing a file extension"
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-echo ""
-echo "Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+# echo ""
+# echo "Use column view in all Finder windows by default"
+# defaults write com.apple.finder FXPreferredViewStyle Clmv
 
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
@@ -180,11 +180,11 @@ defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 
-echo ""
-echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
-/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
-/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# echo ""
+# echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
+# /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+# /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 
 ###############################################################################
@@ -205,24 +205,24 @@ echo "Speeding up Mission Control animations and grouping windows by application
 defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.dock "expose-group-by-app" -bool true
 
-echo ""
-echo "Setting Dock to auto-hide and removing the auto-hiding delay"
-defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0
-defaults write com.apple.dock autohide-time-modifier -float 0
+# echo ""
+# echo "Setting Dock to auto-hide and removing the auto-hiding delay"
+# defaults write com.apple.dock autohide -bool true
+# defaults write com.apple.dock autohide-delay -float 0
+# defaults write com.apple.dock autohide-time-modifier -float 0
 
 
 ###############################################################################
 # Safari & WebKit
 ###############################################################################
 
-echo ""
-echo "Hiding Safariâ€™s bookmarks bar by default"
-defaults write com.apple.Safari ShowFavoritesBar -bool false
+# echo ""
+# echo "Hiding Safariâ€™s bookmarks bar by default"
+# defaults write com.apple.Safari ShowFavoritesBar -bool false
 
-echo ""
-echo "Hiding Safariâ€™s sidebar in Top Sites"
-defaults write com.apple.Safari ShowSidebarInTopSites -bool false
+# echo ""
+# echo "Hiding Safariâ€™s sidebar in Top Sites"
+# defaults write com.apple.Safari ShowSidebarInTopSites -bool false
 
 echo ""
 echo "Disabling Safariâ€™s thumbnail cache for History and Top Sites"
@@ -236,13 +236,13 @@ echo ""
 echo "Making Safariâ€™s search banners default to Contains instead of Starts With"
 defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
 
-echo ""
-echo "Removing useless icons from Safariâ€™s bookmarks bar"
-defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+# echo ""
+# echo "Removing useless icons from Safariâ€™s bookmarks bar"
+# defaults write com.apple.Safari ProxiesInBookmarksBar "()"
 
-echo ""
-echo "Allow hitting the Backspace key to go to the previous page in history"
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
+# echo ""
+# echo "Allow hitting the Backspace key to go to the previous page in history"
+# defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
 
 echo ""
 echo "Enabling the Develop menu and the Web Inspector in Safari"
@@ -283,18 +283,18 @@ echo ""
 echo "Preventing Time Machine from prompting to use new hard drives as backup volume"
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
-echo ""
-echo "Disabling local Time Machine backups"
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# echo ""
+# echo "Disabling local Time Machine backups"
+# hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 
 ###############################################################################
 # Messages                                                                    #
 ###############################################################################
 
-echo ""
-echo "Disable automatic emoji substitution (i.e. use plain text smileys)"
-defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
+# echo ""
+# echo "Disable automatic emoji substitution (i.e. use plain text smileys)"
+# defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticEmojiSubstitutionEnablediMessage" -bool false
 
 echo ""
 echo "Disable smart quotes as itâ€™s annoying for messages that contain code"
@@ -325,9 +325,9 @@ echo "Disable the sudden motion sensor as itâ€™s not useful for SSDs"
 sudo pmset -a sms 0
 
 echo ""
-echo "Speeding up wake from sleep to 24 hours from an hour"
+echo "Speeding up wake from sleep to 2 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
-sudo pmset -a standbydelay 86400
+sudo pmset -a standbydelay 21600
 
 echo ""
 echo "Disable computer sleep and stop the display from shutting off"
