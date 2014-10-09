@@ -6,42 +6,35 @@ set -e
 
 # Apps
 apps=(
+  adium
+  adobe-photoshop-lightroom
   alfred
+  atom
+  betterzip
+  betterzipql
+  carbon-copy-cloner
+  cyberduck
   dropbox
   google-chrome
-  qlcolorcode
-  screenflick
-  slack
-  transmit
-  appcleaner
-  firefox
-  hazel
-  qlmarkdown
-  seil
-  spotify
+  handbrake
+  handbrakebatch
+  handbrakecli
+  joinme
+  jumpcut
+  macpaw-gemini
+  netbeans-cpp
+  openemu
+  plex-home-theater
+  postgres
+  sabnzbd
+  send-to-kindle
+  sparrow
+  steam
+  textmate
+  the-unarchiver
+  utorrent
   vagrant
-  arq
-  flash
-  iterm2
-  qlprettypatch
-  shiori
-  sublime-text3
-  virtualbox
-  atom
-  flux
-  mailbox
-  qlstephen
-  sketch
-  tower
-  vlc
-  cloudup
-  font-m-plus
-  nvalt
-  quicklook-json
-  skype
-  transmission
-  apikitchen
-  mamp
+  vmware-fusion-6
 )
 
 # fonts
