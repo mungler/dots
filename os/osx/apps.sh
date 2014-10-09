@@ -30,6 +30,7 @@ apps=(
   postgres
   sabnzbd
   send-to-kindle
+  skype
   sparrow
   steam
   textmate
