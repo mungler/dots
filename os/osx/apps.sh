@@ -21,6 +21,7 @@ apps=(
   handbrake
   handbrakebatch
   handbrakecli
+  iterm2
   joinme
   jumpcut
   macpaw-gemini
