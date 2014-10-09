@@ -12,6 +12,7 @@ apps=(
   atom
   betterzip
   betterzipql
+  box-sync
   carbon-copy-cloner
   cyberduck
   dropbox
