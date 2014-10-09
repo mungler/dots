@@ -28,12 +28,13 @@ brew install homebrew/dupes/grep
 binaries=(
   graphicsmagick
   imagemagick
+  rbenv
+  ruby-build
   webkit2png
   rename
   zopfli
   ffmpeg
   python
-  mongo
   sshfs
   trash
   tree
