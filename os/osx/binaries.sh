@@ -27,6 +27,7 @@ brew install homebrew/dupes/grep
 # Install other useful binaries
 binaries=(
   graphicsmagick
+  imagemagick
   webkit2png
   rename
   zopfli
