@@ -112,10 +112,10 @@ echo ""
 echo "Disabling auto-correct"
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
-echo ""
-echo "Setting trackpad & mouse speed to a reasonable number"
-defaults write -g com.apple.trackpad.scaling 2
-defaults write -g com.apple.mouse.scaling 2.5
+# echo ""
+# echo "Setting trackpad & mouse speed to a reasonable number"
+# defaults write -g com.apple.trackpad.scaling 2
+# defaults write -g com.apple.mouse.scaling 2.5
 
 echo ""
 echo "Turn off keyboard illumination when computer is not used for 5 minutes"
@@ -192,9 +192,9 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 # the Dock to launch apps.
 #defaults write com.apple.dock persistent-apps -array
 
-echo ""
-echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
-defaults write com.apple.dock tilesize -int 36
+#echo ""
+#echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
+#defaults write com.apple.dock tilesize -int 36
 
 echo ""
 echo "Speeding up Mission Control animations and grouping windows by application"
