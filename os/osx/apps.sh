@@ -36,6 +36,7 @@ apps=(
   steam
   textmate
   the-unarchiver
+  trim-enabler
   utorrent
   vagrant
   vmware-fusion-6
