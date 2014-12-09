@@ -6,10 +6,16 @@ WIP bootstrapping library for osx & ubuntu (and maybe others!)
 
 ## Installation
 
-One-liner:
+One-liner (run as root) to install
 
 ```
 (mkdir -p /tmp/dots && cd /tmp/dots && curl -L https://github.com/mungler/dots/archive/master.tar.gz | tar zx --strip 1 && sh ./install.sh)
+```
+
+Then (as your normal user):
+
+```
+dots boot osx
 ```
 
 ## Design
