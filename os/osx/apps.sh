@@ -6,7 +6,7 @@ set -e
 
 # Apps
 apps=(
-  #adium
+  adium
   adobe-photoshop-lightroom
   alfred
   atom
