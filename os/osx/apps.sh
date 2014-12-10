@@ -39,7 +39,7 @@ apps=(
   trim-enabler
   utorrent
   vagrant
-  vmware-fusion-6
+  vmware-fusion6
   vlc
 )
 
