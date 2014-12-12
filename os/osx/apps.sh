@@ -8,7 +8,6 @@ set -e
 apps=(
   adium
   adobe-photoshop-lightroom
-  alfred
   atom
   betterzip
   betterzipql
@@ -24,19 +23,18 @@ apps=(
   iterm2
   java
   joinme
-  jumpcut
   macpaw-gemini
   netbeans-cpp
   openemu
   plex-home-theater
   postgres
   sabnzbd
+  screencloud
   skype
   sparrow
   steam
   textmate
   the-unarchiver
-  trim-enabler
   utorrent
   vagrant
   vmware-fusion6
