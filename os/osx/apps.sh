@@ -18,8 +18,6 @@ apps=(
   firefox
   google-chrome
   handbrake
-  handbrakebatch
-  handbrakecli
   iterm2
   java
   joinme
@@ -27,7 +25,6 @@ apps=(
   netbeans-cpp
   openemu
   plex-home-theater
-  postgres
   sabnzbd
   screencloud
   skype
@@ -37,6 +34,7 @@ apps=(
   the-unarchiver
   utorrent
   vagrant
+  virtualbox
   vmware-fusion6
   vlc
 )
