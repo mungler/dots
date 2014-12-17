@@ -41,6 +41,8 @@ binaries=(
   ack
   git
   hub
+  boot2docker
+  docker
 )
 
 # Install the binaries
