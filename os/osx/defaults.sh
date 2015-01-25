@@ -39,9 +39,9 @@ sudo spctl --master-disable
 sudo defaults write /var/db/SystemPolicy-prefs.plist enabled -string no
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-echo ""
-echo "Increasing the window resize speed for Cocoa applications"
-defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
+# echo ""
+# echo "Increasing the window resize speed for Cocoa applications"
+# defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 echo ""
 echo "Expanding the save panel by default"
@@ -92,9 +92,9 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
 ###############################################################################
 
-echo ""
-echo "Increasing sound quality for Bluetooth headphones/headsets"
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# echo ""
+# echo "Increasing sound quality for Bluetooth headphones/headsets"
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
 echo ""
 echo "Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
@@ -130,9 +130,9 @@ echo "Requiring password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-echo ""
-echo "Enable HiDPI display modes (requires restart)"
-sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+# echo ""
+# echo "Enable HiDPI display modes (requires restart)"
+# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 ###############################################################################
 # Finder
@@ -196,10 +196,10 @@ defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
 #echo "Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
 #defaults write com.apple.dock tilesize -int 36
 
-echo ""
-echo "Speeding up Mission Control animations and grouping windows by application"
-defaults write com.apple.dock expose-animation-duration -float 0.1
-defaults write com.apple.dock "expose-group-by-app" -bool true
+# echo ""
+# echo "Speeding up Mission Control animations and grouping windows by application"
+# defaults write com.apple.dock expose-animation-duration -float 0.1
+# defaults write com.apple.dock "expose-group-by-app" -bool true
 
 # echo ""
 # echo "Setting Dock to auto-hide and removing the auto-hiding delay"
@@ -325,10 +325,10 @@ echo "Speeding up wake from sleep to 2 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
 sudo pmset -a standbydelay 21600
 
-echo ""
-echo "Disable computer sleep and stop the display from shutting off"
-sudo pmset -a sleep 0
-sudo pmset -a displaysleep 0
+# echo ""
+# echo "Disable computer sleep and stop the display from shutting off"
+# sudo pmset -a sleep 0
+# sudo pmset -a displaysleep 0
 
 echo ""
 echo "Disable annoying backswipe in Chrome"
