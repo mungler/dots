@@ -26,18 +26,11 @@ brew install homebrew/dupes/grep
 
 # Install other useful binaries
 binaries=(
-  graphicsmagick
   imagemagick
   rbenv
   ruby-build
-  webkit2png
-  rename
-  zopfli
   ffmpeg
   python
-  sshfs
-  trash
-  tree
   ack
   git
   hub
