@@ -22,7 +22,6 @@ apps=(
   java
   joinme
   macpaw-gemini
-  netbeans-cpp
   openemu
   plex-home-theater
   sabnzbd
