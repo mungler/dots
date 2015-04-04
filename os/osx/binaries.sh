@@ -32,6 +32,7 @@ binaries=(
   ruby-build
   ffmpeg
   python
+  libdvdcss
   ack
   git
   hub
